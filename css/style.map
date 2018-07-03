@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "scss/style.css",
+	"sources": [
+		"scss/style.scss"
+	],
+	"sourcesContent": [
+		" @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');\r\n\r\n $fonts-roboto : 'Roboto', sans-serif;\r\n $fonts-lato : 'Lato', sans-serif;\r\n\r\nbody {\r\n  font-family: $fonts-roboto;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nh1,h2,h3 {\r\n  text-transform: uppercase;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\nh1 {\r\n  font-size: 1.7rem;\r\n}\r\n\r\nh2 {\r\n  font-size: 1.5rem,\r\n}\r\n\r\nh3 {\r\n  font-size: 1.3rem;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n//HEADER\r\n.header {\r\n  --bg: url('../img/header.jpeg');\r\n  width: 100vw;\r\n  height: 200vh;\r\n  background: var(--bg, url(../img/header.jpeg));\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  background-repeat: no-repeat;\r\n}\r\n"
+	],
+	"mappings": "AAAC,OAAO,CAAC,0DAAI;;AAKb,AAAA,IAAI,CAAC;EACH,WAAW,EAJI,QAAQ,EAAE,UAAU;EAKnC,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACZ;;;AAED,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,CAAC;EACP,cAAc,EAAE,SAAU;EAC1B,aAAa,EAAE,IAAK;CACrB;;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAO;CACnB;;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAM;CAClB;;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAO;CACnB;;;AAmBD,AAAA,OAAO,CAAC;EACN,IAAI,EAAE,yBAAG;EACT,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM;EACd,UAAU,EAAE,kCAAG;EACf,eAAe,EAAE,KAAM;EACvB,mBAAmB,EAAE,MAAO;EAC5B,qBAAqB,EAAE,KAAM;EAC7B,iBAAiB,EAAE,SAAU;CAC9B",
+	"names": []
+}

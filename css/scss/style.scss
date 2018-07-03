@@ -1,0 +1,55 @@
+ @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+ $fonts-roboto : 'Roboto', sans-serif;
+ $fonts-lato : 'Lato', sans-serif;
+
+body {
+  font-family: $fonts-roboto;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem,
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//HEADER
+.header {
+  --bg: url('../img/header.jpeg');
+  width: 100vw;
+  height: 200vh;
+  background: var(--bg, url(../img/header.jpeg));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

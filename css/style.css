@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+/* line 6, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+h1, h2, h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* line 17, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+h1 {
+  font-size: 1.7rem;
+}
+
+/* line 21, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+h2 {
+  font-size: 1.5rem;
+}
+
+/* line 25, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+h3 {
+  font-size: 1.3rem;
+}
+
+/* line 46, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header {
+  --bg: url("../img/header.jpeg");
+  width: 100vw;
+  height: 200vh;
+  background: var(--bg, url(../img/header.jpeg));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=../style.map */

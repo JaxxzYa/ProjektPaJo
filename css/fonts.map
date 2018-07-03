@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "scss/fonts.css",
+	"sources": [
+		"scss/fonts.scss"
+	],
+	"sourcesContent": [
+		"@fontface {\r\n  font-family: 'Roboto';\r\n  src: url('fonts/Roboto-Regular.ttf') format('truetype');\r\n  font-style: normal;\r\n}\r\n\r\n@fontface {\r\n  font-family: 'Roboto';\r\n  src: url('fonts/Roboto-Regular.ttf') format('truetype');\r\n  font-style: normal;\r\n}\r\n"
+	],
+	"mappings": "AAAA,SAAS;EACP,WAAW,EAAE,QAAS;EACtB,GAAG,EAAE,+BAAG,CAA6B,kBAAM;EAC3C,UAAU,EAAE,MAAO;;;AAGrB,SAAS;EACP,WAAW,EAAE,QAAS;EACtB,GAAG,EAAE,+BAAG,CAA6B,kBAAM;EAC3C,UAAU,EAAE,MAAO",
+	"names": []
+}
