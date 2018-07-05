@@ -1,42 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
-/* line 6, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 19, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-/* line 12, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-h1, h2, h3 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-/* line 17, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-h1 {
-  font-size: 1.7rem;
-}
-
-/* line 21, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-h2 {
-  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 /* line 25, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-h3 {
-  font-size: 1.3rem;
+h1, h2, h3 {
+  margin: 0;
 }
 
-/* line 46, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header {
-  --bg: url("../img/header.jpeg");
+/* line 29, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 37, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 200vh;
-  background: var(--bg, url(../img/header.jpeg));
+  height: 100vh;
+  --bg: url(../img/header3.jpeg);
+  background: var(--bg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* line 52, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.light {
+  color: #69d7ca;
+}
+
+/* line 57, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #363636;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 69, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-collapse {
+  display: flex;
+}
+
+/* line 79, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-nav li, .navbar-social li {
+  display: inline-block;
+}
+
+/* line 84, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-toggle {
+  display: none;
 }
 
 /*# sourceMappingURL=../style.map */

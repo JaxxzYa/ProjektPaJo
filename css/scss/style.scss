@@ -1,55 +1,86 @@
- @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
- $fonts-roboto : 'Roboto', sans-serif;
- $fonts-lato : 'Lato', sans-serif;
+$fonts-roboto : 'Roboto', sans-serif;
+$fonts-lato : 'Lato', sans-serif;
+
+$fonts: (
+  'roboto' : ('Roboto', sans-serif),
+  'lato' : ('Lato, sans-serif')
+);
+
+$colors: (
+  'navbar' : rgb(54, 54, 54),
+  'navbar-text' : rgb(105, 215, 202),
+  'navbar-text-hover': rgb(120, 245, 230),
+);
+
+
 
 body {
-  font-family: $fonts-roboto;
   margin: 0;
   padding: 0;
+  font-family: map-get($fonts, 'roboto');
 }
 
 h1,h2,h3 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
-h1 {
-  font-size: 1.7rem;
-}
-
-h2 {
-  font-size: 1.5rem,
-}
-
-h3 {
-  font-size: 1.3rem;
+ul,li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//HEADER
-.header {
-  --bg: url('../img/header.jpeg');
+//Background Class
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 200vh;
-  background: var(--bg, url(../img/header.jpeg));
+  height: 100vh;
+  --bg: url(../img/header3.jpeg);
+  background: var(--bg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.light {
+  color: map-get($colors, 'navbar-text'),
+}
+
+//Navbar
+.navbar {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: map-get($colors, 'navbar');
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+.navbar-logo {
+
+}
+
+.navbar-nav, .navbar-social {
+
+  li {
+    display: inline-block;
+  }
+}
+
+.navbar-toggle {
+  display: none;
 }
