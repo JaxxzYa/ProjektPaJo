@@ -32,6 +32,42 @@ ul,li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.light {
+  color: map-get($colors, 'navbar-text'),
+}
+
+.facebook {
+  &:hover {
+    color: #3B5998 !important;
+  }
+}
+
+.instagram {
+  &:hover {
+    color: #FECD66 !important;
+  }
+}
+
+.youtube {
+  &:hover {
+    color: #F00 !important;
+  }
+}
+
+.email {
+  &:hover {
+    color: #6001D2 !important;
+  }
+}
+
+//General
+.shadow {
+  box-shadow: 0 0 5px 5px rgba(0,0,0,.7);
+}
 
 //Background Class
 .bg {
@@ -49,10 +85,6 @@ ul,li {
   z-index: -1;
 }
 
-.light {
-  color: map-get($colors, 'navbar-text'),
-}
-
 //Navbar
 .navbar {
   padding: 1rem;
@@ -64,23 +96,69 @@ ul,li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
+
 
 .navbar-collapse {
   display: flex;
 }
 
 .navbar-logo {
+  display: block;
+  text-transform: uppercase;
+  padding-left: 2rem;
 
+  &:hover {
+    color: map-get($colors, 'navbar-text-hover');
+  }
 }
 
 .navbar-nav, .navbar-social {
-
+  padding-right: 2rem;
   li {
     display: inline-block;
   }
 }
 
+.navbar-nav li {
+  margin: 0 .5rem;
+}
+
+.nav-link {
+  color: map-get($colors, 'navbar-text');
+
+  &:hover {
+    color: map-get($colors, 'navbar-text-hover');
+  }
+}
+
+.navbar-social li {
+  margin: 0 .25rem;
+}
+
 .navbar-toggle {
   display: none;
+}
+
+//Mixins
+@mixin font-size($min_fs, $max_fs, $min_screen, $max_screen) {
+  font-size: calc($min_fs + ($max_fs - $min_fs) * (100vw - $min_screen) / ($max_screen - $min_screen));
+}
+
+//Header Information
+.header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: rgba(255,255,255, .7);
+    //@include font-size(16px, 48px, 400px, 1080px);
+
+    font-size: calc(16px + (64px - 16px) * (100vw - 400px) / (1080px - 400px));
+
+  }
 }
