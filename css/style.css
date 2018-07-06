@@ -1,59 +1,60 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
-/* line 19, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700");
+/* line 25, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
-/* line 25, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 32, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 h1, h2, h3 {
   margin: 0;
 }
 
-/* line 29, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 36, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 35, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 42, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 39, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 46, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .light {
   color: #69d7ca;
 }
 
-/* line 44, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 51, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .facebook:hover {
   color: #3B5998 !important;
 }
 
-/* line 50, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 57, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .instagram:hover {
   color: #FECD66 !important;
 }
 
-/* line 56, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 63, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .youtube:hover {
   color: #F00 !important;
 }
 
-/* line 62, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 69, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .email:hover {
   color: #6001D2 !important;
 }
 
-/* line 68, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 75, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .shadow {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* line 73, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 80, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .bg {
   position: absolute;
   top: 0;
@@ -69,7 +70,7 @@ a {
   z-index: -1;
 }
 
-/* line 89, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 96, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar {
   padding: 1rem;
   position: fixed;
@@ -81,61 +82,69 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: .5s padding, .5s opacity;
+  z-index: 999;
 }
 
-/* line 103, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 111, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.shrink {
+  padding: .25rem 1rem;
+  opacity: .7;
+}
+
+/* line 116, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-collapse {
   display: flex;
 }
 
-/* line 107, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 120, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-logo {
   display: block;
   text-transform: uppercase;
   padding-left: 2rem;
 }
 
-/* line 112, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 125, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-logo:hover {
   color: #78f5e6;
 }
 
-/* line 117, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 130, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-nav, .navbar-social {
   padding-right: 2rem;
 }
 
-/* line 119, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 132, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-nav li, .navbar-social li {
   display: inline-block;
 }
 
-/* line 124, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 137, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-nav li {
   margin: 0 .5rem;
 }
 
-/* line 128, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 141, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .nav-link {
   color: #69d7ca;
 }
 
-/* line 131, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 144, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .nav-link:hover {
   color: #78f5e6;
 }
 
-/* line 136, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 149, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-social li {
   margin: 0 .25rem;
 }
 
-/* line 140, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 153, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-toggle {
   display: none;
 }
 
-/* line 150, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 163, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .header {
   height: 100vh;
   width: 100vw;
@@ -144,10 +153,135 @@ a {
   align-items: center;
 }
 
-/* line 157, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 170, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .header h1 {
   color: rgba(255, 255, 255, 0.7);
-  font-size: calc(16px + (64px - 16px) * (100vw - 400px) / (1080px - 400px));
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif !important;
+  position: relative;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+/* line 180, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h1:hover {
+  color: rgba(120, 245, 230, 0.7);
+}
+
+/* line 184, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h1::before, .header h1::after {
+  content: '';
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+}
+
+/* line 192, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h1::before {
+  top: -2rem;
+  left: -2rem;
+  border-top: .7rem solid currentColor;
+  border-left: .7rem solid currentColor;
+}
+
+/* line 199, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h1::after {
+  right: -2rem;
+  bottom: -2rem;
+  border-right: .7rem solid currentColor;
+  border-bottom: .7rem solid currentColor;
+}
+
+/* line 208, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header .scroll-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2rem;
+  border: 2px solid currentColor;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+/* line 222, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header .scroll-next:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(120, 245, 230, 0.7);
+}
+
+/* line 230, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+/* line 238, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.image {
+  --image: url(../img/training.jpg);
+  background: var(--image);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  flex-grow: 1;
+  min-height: 25vh;
+}
+
+/* line 248, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #5a5a5a;
+  padding: 2rem;
+  flex-basis: 360px;
+  flex-grow: 1;
+}
+
+/* line 258, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.content h2 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 262, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.content p {
+  text-align: justify;
+  hyphens: auto;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 270, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.section .image {
+  width: 60%;
+}
+
+/* line 273, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.section .content {
+  width: 40%;
+}
+
+/* line 280, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+  background-color: #2a9ce4;
+  border-radius: .25em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 287, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.btn:hover {
+  background-color: #6ba8ee;
 }
 
 /*# sourceMappingURL=../style.map */

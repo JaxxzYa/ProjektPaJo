@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
 
 $fonts-roboto : 'Roboto', sans-serif;
 $fonts-lato : 'Lato', sans-serif;
 
 $fonts: (
   'roboto' : ('Roboto', sans-serif),
-  'lato' : ('Lato, sans-serif')
+  'lato' : ('Lato', sans-serif),
 );
 
 $colors: (
   'navbar' : rgb(54, 54, 54),
   'navbar-text' : rgb(105, 215, 202),
   'navbar-text-hover': rgb(120, 245, 230),
+  'header-text' : rgba(255,255,255, .7),
+  'header-text-hover' : rgba(120, 245, 230, .7),
+  'content-background' : rgb(90, 90, 90),
+  'content-text' : rgba(255,255,255, .7),
+  'primary' : rgb(42, 156, 228),
+  'secondary' : rgb(107, 168, 238),
 );
 
 
@@ -20,6 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: map-get($fonts, 'roboto');
+  overflow-x: hidden;
 }
 
 h1,h2,h3 {
@@ -97,8 +104,14 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: .5s padding, .5s opacity;
+  z-index: 999;
 }
 
+.shrink {
+  padding: .25rem 1rem;
+  opacity: .7;
+}
 
 .navbar-collapse {
   display: flex;
@@ -155,10 +168,126 @@ a {
   align-items: center;
 
   h1 {
-    color: rgba(255,255,255, .7);
-    //@include font-size(16px, 48px, 400px, 1080px);
+    color: map-get($colors, 'header-text');
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    font-family: map-get($fonts, 'lato') !important;
+    position: relative;
+    text-transform: uppercase;
+    transition: .5s;
 
-    font-size: calc(16px + (64px - 16px) * (100vw - 400px) / (1080px - 400px));
+    &:hover {
+      color: map-get($colors, 'header-text-hover');
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+    }
+
+    &::before {
+      top: -2rem;
+      left: -2rem;
+      border-top: .7rem solid currentColor;
+      border-left: .7rem solid currentColor;
+    }
+
+    &::after {
+      right: -2rem;
+      bottom: -2rem;
+      border-right: .7rem solid currentColor;
+      border-bottom: .7rem solid currentColor;
+    }
 
   }
+
+  .scroll-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    color: map-get($colors, 'header-text');
+    font-size: 2rem;
+    border: 2px solid currentColor;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    transition: .5s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .3);
+      color: map-get($colors, 'header-text-hover');
+    }
+  }
 }
+
+//Sections
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+.image {
+  --image: url(../img/training.jpg);
+  background: var(--image);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  flex-grow: 1;
+  min-height: 25vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: map-get($colors, 'content-background');
+  padding: 2rem;
+  flex-basis: 360px;
+  flex-grow: 1;
+
+  h2 {
+    color: map-get($colors, 'content-text');
+  }
+
+  p {
+    text-align: justify;
+    hyphens: auto;
+    color: map-get($colors, 'content-text');
+  }
+}
+
+.section {
+  .image {
+    width: 60%;
+  }
+  .content {
+    width: 40%;
+  }
+}
+
+
+
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+  background-color: map-get($colors, 'primary');
+  border-radius: .25em;
+  color: map-get($colors, 'content-text');
+
+  &:hover {
+    background-color: map-get($colors, 'secondary');
+  }
+}
+
+
+//training
