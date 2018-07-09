@@ -4,31 +4,25 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if($(document).scrollTop() > 100)
     {
-      $('.navbar').addClass("shrink")
+      $('.navbar').addClass("navbar-toggled")
     } else {
-      $('.navbar').removeClass("shrink")
+      $('.navbar').removeClass("navbar-toggled")
     }
+  })
+
+  //Navbar toggle
+  $('.navbar-toggle').click(function(e){
+    e.preventDefault()
+    $('.navbar-collapse').toggleClass("navbar-show")
   })
 
 
   //Content Scroll Click
-  $('.scroll-next').click(function(e){
+  $('#header-scroll').click(function(e){
     e.preventDefault()
     $('html, body').animate({
     scrollTop: $("#content").offset().top
     }, 1000);
   })
-
-
-
-
-
-
-
-
-
-
-
-
 
 })

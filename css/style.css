@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700");
-/* line 25, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 27, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -7,281 +7,394 @@ body {
   overflow-x: hidden;
 }
 
-/* line 32, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 34, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 h1, h2, h3 {
   margin: 0;
 }
 
-/* line 36, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 38, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 42, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 44, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 46, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 48, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .light {
-  color: #69d7ca;
+  color: #2a9ce4;
 }
 
-/* line 51, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 53, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .facebook:hover {
   color: #3B5998 !important;
 }
 
-/* line 57, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 59, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .instagram:hover {
   color: #FECD66 !important;
 }
 
-/* line 63, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 65, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .youtube:hover {
   color: #F00 !important;
 }
 
-/* line 69, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 71, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .email:hover {
   color: #6001D2 !important;
 }
 
-/* line 75, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 77, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .shadow {
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
-/* line 80, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  --bg: url(../img/header3.jpeg);
-  background: var(--bg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
-/* line 96, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 82, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar {
-  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  background-color: #363636;
+  background-color: rga(54, 54, 54, 0);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  transition: .5s padding, .5s opacity;
   z-index: 999;
+  transition: .5s padding;
 }
 
-/* line 111, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.shrink {
-  padding: .25rem 1rem;
-  opacity: .7;
-}
-
-/* line 116, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.navbar-collapse {
-  display: flex;
-}
-
-/* line 120, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 95, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-logo {
-  display: block;
-  text-transform: uppercase;
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
 
-/* line 125, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.navbar-logo:hover {
-  color: #78f5e6;
-}
-
-/* line 130, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.navbar-nav, .navbar-social {
-  padding-right: 2rem;
-}
-
-/* line 132, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.navbar-nav li, .navbar-social li {
-  display: inline-block;
-}
-
-/* line 137, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.navbar-nav li {
-  margin: 0 .5rem;
-}
-
-/* line 141, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.nav-link {
-  color: #69d7ca;
-}
-
-/* line 144, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.nav-link:hover {
-  color: #78f5e6;
-}
-
-/* line 149, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.navbar-social li {
-  margin: 0 .25rem;
-}
-
-/* line 153, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 99, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .navbar-toggle {
   display: none;
 }
 
-/* line 163, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header {
-  height: 100vh;
-  width: 100vw;
+/* line 103, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-collapse {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  margin-left: auto;
   align-items: center;
+}
+
+/* line 110, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-nav li,
+.navbar-social li {
+  display: inline-block;
+}
+
+/* line 115, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-nav li {
+  margin: 0 1rem;
+}
+
+/* line 119, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-social {
+  margin-right: 1rem;
+}
+
+/* line 123, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-social li {
+  margin: 0 .5rem;
+}
+
+/* line 127, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-nav a,
+.navbar-social a {
+  color: #2a9ce4;
+}
+
+/* line 131, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-nav a:hover,
+.navbar-social a:hover {
+  color: #6ba8ee;
+}
+
+/* line 136, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.navbar-toggled {
+  background-color: rgba(54, 54, 54, 0.7);
+  padding: 1rem 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 145, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.bg {
+  --bg: url(../img/header4.jpeg);
+  background: var(--bg, url(../img/header4.jpeg));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* line 162, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* line 170, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header h1 {
+.header .header-wrap {
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+/* line 176, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h1,
+.header h2 {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 5rem;
-  line-height: 5rem;
-  font-weight: 700;
-  font-family: "Lato", sans-serif !important;
-  position: relative;
   text-transform: uppercase;
-  transition: .5s;
 }
 
-/* line 180, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header h1:hover {
-  color: rgba(120, 245, 230, 0.7);
+/* line 182, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
 }
 
-/* line 184, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header h1::before, .header h1::after {
-  content: '';
-  width: 4rem;
-  height: 4rem;
-  position: absolute;
+/* line 187, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
 
 /* line 192, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header h1::before {
-  top: -2rem;
-  left: -2rem;
-  border-top: .7rem solid currentColor;
-  border-left: .7rem solid currentColor;
+.header h3 {
+  margin-top: 3rem;
+  font-size: 4rem;
+}
+
+/* line 196, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.header h3 a {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* line 199, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header h1::after {
-  right: -2rem;
-  bottom: -2rem;
-  border-right: .7rem solid currentColor;
-  border-bottom: .7rem solid currentColor;
+.header h3 a:hover {
+  color: #2a9ce4;
 }
 
-/* line 208, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header .scroll-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 10%;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 2rem;
-  border: 2px solid currentColor;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  transition: .5s;
-}
-
-/* line 222, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.header .scroll-next:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: rgba(120, 245, 230, 0.7);
-}
-
-/* line 230, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.section {
+/* line 209, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.content {
+  width: 100vw;
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  min-height: 50vh;
   flex-wrap: wrap;
 }
 
-/* line 238, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.image {
-  --image: url(../img/training.jpg);
-  background: var(--image);
-  background-size: cover;
+/* line 222, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card {
+  --fg: white;
+  --img: url(../img/training.jpg);
+  min-height: 50vh;
+  position: relative;
+  background: var(--img);
   background-position: center;
-  display: block;
-  flex-grow: 1;
-  min-height: 25vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* line 248, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: #5a5a5a;
-  padding: 2rem;
-  flex-basis: 360px;
-  flex-grow: 1;
+/* line 234, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--fg, white);
+  opacity: .7;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* line 247, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card:hover::before {
+  opacity: .1;
+}
+
+/* line 253, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card--small {
+  flex-basis: 40%;
 }
 
 /* line 258, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.content h2 {
-  color: rgba(255, 255, 255, 0.7);
+.card--big {
+  flex-basis: 60%;
 }
 
 /* line 262, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.content p {
+.card__body {
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+
+/* line 266, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card__body h2,
+.card__body p {
+  color: inherit;
+}
+
+/* line 271, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card__body p {
   text-align: justify;
   hyphens: auto;
-  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
 }
 
-/* line 270, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.section .image {
-  width: 60%;
+/* line 278, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card__body--light {
+  color: white;
 }
 
-/* line 273, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
-.section .content {
-  width: 40%;
+/* line 282, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.card__body--dark {
+  color: #181818;
 }
 
-/* line 280, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 286, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .btn {
-  display: inline-block;
-  padding: .5em 1em;
+  padding: .5em 1.2em;
   background-color: #2a9ce4;
-  border-radius: .25em;
-  color: rgba(255, 255, 255, 0.7);
+  border-radius: .5em;
+  color: white;
 }
 
-/* line 287, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+/* line 292, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
 .btn:hover {
   background-color: #6ba8ee;
+}
+
+/* line 302, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.team__wrapper {
+  width: 100vw;
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 311, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.team__member {
+  margin: 0 2rem;
+}
+
+/* line 314, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.team__member--img {
+  --img: url(../img/member_placeholder.jpg);
+  background: var(--img, url(../img/member_placeholder.jpg));
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+/* line 323, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+.team__member--name {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 333, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .card--small,
+  .card--big {
+    flex-basis: 50%;
+  }
+  /* line 338, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .card__body {
+    padding: 1rem 1rem;
+  }
+  /* line 342, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-social {
+    display: none;
+  }
+  /* line 346, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-nav {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /* line 353, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar {
+    box-shadow: initial;
+  }
+  /* line 357, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+  /* line 363, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    flex-direction: column;
+    background-color: inherit;
+    padding-bottom: 1rem;
+    transform-origin: top;
+    transform: scale(1, 0);
+    transition: transform .5s ease;
+  }
+  /* line 376, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-show {
+    transform: scale(1, 1);
+  }
+  /* line 380, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-nav li {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+  }
+  /* line 386, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .navbar-social {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* line 395, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .header .header-wrap {
+    margin: 0 1rem;
+  }
+  /* line 398, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .header h1 {
+    font-size: 2rem;
+  }
+  /* line 402, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .header h2 {
+    font-size: 1.5rem;
+  }
+  /* line 407, C:/Development/HTML/ProjektPaJo/css/scss/style.scss */
+  .card--small,
+  .card--big {
+    flex-basis: 100%;
+  }
 }
 
 /*# sourceMappingURL=../style.map */
