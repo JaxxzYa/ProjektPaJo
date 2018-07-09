@@ -288,13 +288,7 @@ a {
   background-color: #6ba8ee;
 }
 
-/* line 299, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
-.team {
-  display: block;
-  padding: 1rem 2rem;
-}
-
-/* line 304, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+/* line 303, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
 .team__wrapper {
   width: 100vw;
   margin: 2rem 2rem;
@@ -304,12 +298,12 @@ a {
   align-items: center;
 }
 
-/* line 313, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+/* line 312, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
 .team__member {
   margin: 0 2rem;
 }
 
-/* line 316, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+/* line 315, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
 .team__member--img {
   --img: url(../img/member_placeholder.jpg);
   background: var(--img, url(../img/member_placeholder.jpg));
@@ -319,43 +313,43 @@ a {
   width: 200px;
 }
 
-/* line 325, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+/* line 324, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
 .team__member--name {
   text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 335, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 334, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .card--small,
   .card--big {
     flex-basis: 50%;
   }
-  /* line 340, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 339, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .card__body {
     padding: 1rem 1rem;
   }
-  /* line 344, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 343, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-social {
     display: none;
   }
-  /* line 348, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 347, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-nav {
     margin-right: 1rem;
   }
 }
 
 @media screen and (max-width: 780px) {
-  /* line 355, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 354, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar {
     box-shadow: initial;
   }
-  /* line 359, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 358, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-toggle {
     display: block;
     margin-left: auto;
     margin-right: 2rem;
   }
-  /* line 365, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 364, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -368,36 +362,36 @@ a {
     transform: scale(1, 0);
     transition: transform .5s ease;
   }
-  /* line 378, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 377, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-show {
     transform: scale(1, 1);
   }
-  /* line 382, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 381, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-nav li {
     display: block;
     padding: .5rem 0;
     text-align: center;
   }
-  /* line 388, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 387, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .navbar-social {
     display: initial;
   }
 }
 
 @media screen and (max-width: 650px) {
-  /* line 397, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 396, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .header .header-wrap {
     margin: 0 1rem;
   }
-  /* line 400, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 399, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .header h1 {
     font-size: 2rem;
   }
-  /* line 404, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 403, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .header h2 {
     font-size: 1.5rem;
   }
-  /* line 409, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
+  /* line 408, E:/Projects/Web/ProjektPaJo/css/scss/style.scss */
   .card--small,
   .card--big {
     flex-basis: 100%;

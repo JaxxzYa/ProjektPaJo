@@ -242,6 +242,7 @@ a {
     opacity: .7;
     z-index: 1;
     pointer-events: none;
+    transition: .3s opacity;
   }
 
   &:hover::before {
@@ -296,7 +297,8 @@ a {
 
 //Section Team
 .team {
-  
+  display: block;
+  padding: 1rem 2rem;
 }
 
 .team__wrapper {
