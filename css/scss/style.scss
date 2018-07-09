@@ -31,6 +31,10 @@ body {
   overflow-x: hidden;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 h1,h2,h3 {
   margin: 0;
 }
@@ -299,19 +303,22 @@ a {
 .team {
   display: block;
   padding: 1rem 2rem;
+  box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .team__wrapper {
-  width: 100vw;
+  //width: 100%;
   margin: 2rem 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .team__member {
-  margin: 0 2rem;
+  margin: 2rem 2rem;
+  flex-grow: 1;
 }
 .team__member--img {
   --img: url(../img/member_placeholder.jpg);
@@ -320,15 +327,74 @@ a {
   background-position: center;
   height: 200px;
   width: 200px;
+  margin: 0 auto;
 }
 
-.team__member--name  {
+.team__member--name {
   text-align: center;
+  color: map-get($colors, 'primary');
+
+  a {
+    color: map-get($colors, 'primary');
+    &:hover {
+      color: map-get($colors, 'secondary'); 
+    }
+  }
 }
 
+.contact {
+  width: 100vw;
+  background-color: map-get($colors, 'content-background');
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
 
+}
 
+.contact__header--text {
+  text-align: justify;
+  hyphens: auto;
+}
 
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact__name,
+.contact__name--input,
+.contact__text,
+.contact__text--input,
+.contact__button {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+
+}
+
+.contact__text--input {
+  resize: none;
+}
+
+.contact__text,
+.contact__button {
+  margin-top: 1rem;
+}
+.contact__button {
+  padding: .5em 1em;
+  background-color: transparent;
+  border: 1px solid map-get($colors, 'primary');
+  border-radius: 5px;
+  color: map-get($colors, 'primary');
+  cursor: pointer;
+
+  &:hover {
+    color: map-get($colors, 'content-text');
+    background-color: map-get($colors, 'primary');
+  }
+}
 
 //MEDIA
 @media screen and (max-width: 1000px) {
