@@ -148,7 +148,7 @@ a {
 //Background
 .bg {
   --bg: url(../img/header4.jpeg);
-  background: var(--bg, url(../img/header4.jpeg));
+  background: var(--bg, url('../img/header4.jpeg'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -322,7 +322,7 @@ a {
 }
 .team__member--img {
   --img: url(../img/member_placeholder.jpg);
-  background: var(--img, url(../img/member_placeholder.jpg));
+  background: var(--img, url('../img/member_placeholder.jpg'));
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -337,7 +337,7 @@ a {
   a {
     color: map-get($colors, 'primary');
     &:hover {
-      color: map-get($colors, 'secondary'); 
+      color: map-get($colors, 'secondary');
     }
   }
 }
@@ -457,8 +457,6 @@ a {
 }
 
 @media screen and(max-width: 650px) {
-
-
   .header {
     .header-wrap {
       margin: 0 1rem;
