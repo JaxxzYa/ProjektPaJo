@@ -1,22 +1,12 @@
-#########################
-## Sample Sass Lint File
-#########################
-# Linter Options
 options:
-  # Don't merge default rules
   merge-default-rules: false
-  # Set the formatter to 'html'
   formatter: html
-  # Output file instead of logging results
-  output-file: 'linters/sass-lint.html'
-  # Raise an error if more than 50 warnings are generated
+  output-file: 'sass-lint.html'
   max-warnings: 50
-# File Options
 files:
   include: 'sass/**/*.s+(a|c)ss'
   ignore:
     - 'sass/vendor/**/*.*'
-# Rule Configuration
 rules:
   extends-before-mixins: 2
   extends-before-declarations: 2
@@ -25,18 +15,14 @@ rules:
     - 2
     -
       exclude:
-        - breakpoint
-        - mq
+        - breakpoints
+        - mqasd
 
   no-warn: 1
   no-debug: 1
   no-ids: 2
   no-important: 2
-  hex-notation:
-    - 2
-    -
-      style: uppercase
-  indentation:
+  hex-notations:
     - 2
     -
       size: 2
